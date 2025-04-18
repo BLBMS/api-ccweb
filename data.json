@@ -1,6 +1,6 @@
 {
   "DATE": [
-    "11:36:07 18.04.2025"
+    "11:38:08 18.04.2025"
   ],
   "DATA": [
     {
@@ -13,37 +13,37 @@
       "PHONE": "A50b",
       "HOST": "102.102",
       "POOL": "farm",
-      "MHS": "4.223"
+      "MHS": "4.219"
     },
     {
       "PHONE": "A50c",
       "HOST": "102.103",
       "POOL": "farm",
-      "MHS": "4.156"
+      "MHS": "4.160"
     },
     {
       "PHONE": "A50d",
       "HOST": "102.104",
       "POOL": "farm",
-      "MHS": "4.033"
+      "MHS": "4.035"
     },
     {
       "PHONE": "A50e",
       "HOST": "102.105",
       "POOL": "farm",
-      "MHS": "4.192"
+      "MHS": "4.194"
     },
     {
       "PHONE": "A50f",
       "HOST": "102.106",
       "POOL": "farm",
-      "MHS": "4.038"
+      "MHS": "4.036"
     },
     {
       "PHONE": "A50g",
       "HOST": "102.107",
       "POOL": "farm",
-      "MHS": "3.903"
+      "MHS": "3.900"
     },
     {
       "PHONE": "HNRb",
@@ -55,14 +55,14 @@
   "SUMM": [
     {
       "all_dev": 8,
-      "mhs_all": 28.682,
+      "mhs_all": 28.681,
       "dev_active": 7,
       "dev_inactive": 1,
       "dev_off": 3,
       "vrsc_day": 0.03,
       "usdt_day": 0.09,
-      "summ_time": "11:36:06",
-      "iteration": 15
+      "summ_time": "11:38:08",
+      "iteration": 16
     }
   ],
   "SORT": [
