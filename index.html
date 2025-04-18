@@ -120,7 +120,7 @@ text-align: left;
 </style>
 </head>
 <body>
-<h2>api-ccminer       by blbMS v.019</h2>
+<h2>api-ccminer       by blbMS v.020</h2>
 <h3 id="date-container"></h3>
 <div class="container" id="tables-container"></div>
 <div class="pools-container" id="all-pools-in-container"></div>
@@ -230,79 +230,4 @@ let tableHTML = `
 <table class="pools-table">
 <tr><td>${colorPools}</td></tr>
 </table>
-</div>
-`;
-allPoolsContainer.innerHTML = tableHTML;
-}
-createAllPoolsTable(allPools);
-function createSummTable(summData) {
-let summContainer = document.getElementById("summ-container");
-summContainer.innerHTML = "";
-if (!summData || summData.length === 0) return;
-let summ = summData[0];
-let tableHTML = `
-<div class="summ-table">
-<table>
-<tr><th>Total</th><td>${summ.all_dev}</td></tr>
-<tr><th>Active</th><td>${summ.dev_active}</td></tr>
-<tr><th>Inactive</th><td>${summ.dev_inactive}</td></tr>
-<tr><th>Offline</th><td>${summ.dev_off}</td></tr>
-</table>
-</div>
-<div class="summ-table">
-<table>
-<tr><th>MH/s</th><td>${summ.mhs_all}</td></tr>
-<tr><th>VRSC/day</th><td>${summ.vrsc_day}</td></tr>
-<tr><th>USDT/day</th><td>${summ.usdt_day}</td></tr>
-<tr><th>Time</th><td>${summ.summ_time}</td></tr>
-<tr><th>Iteration</th><td>${summ.iteration}</td></tr>
-</table>
-</div>`;
-summContainer.innerHTML = tableHTML;
-}
-function createSortTable(sortData) {
-let sortContainer = document.getElementById("sort-container");
-sortContainer.innerHTML = "";
-if (!sortData || sortData.length === 0) return;
-sortData.forEach(group => {
-let category = Object.keys(group)[0];
-let devices = group[category]["devices"].join("  ");
-let nrDevs = group[category]["nr-devs"];
-let poolColorClass = getPoolColorClass(category);
-console.log(`Category: ${category}, Class: ${poolColorClass}`);
-let tableHTML = `
-<div class="sort-container">
-<table class="sort-table">
-<tr><th class="sort-header ${poolColorClass}">${category} (${nrDevs})</th></tr>
-<tr><td class="sort-data">${devices}</td></tr>
-</table>
-</div>`;
-sortContainer.innerHTML += tableHTML;
-});
-}
-function getPoolColorClass(pool) {
-if (!pool) return "";
-pool = pool.toLowerCase().trim();
-if (pool.includes("off-line")) return "pool-off-line";
-if (pool.includes("not-on-list")) return "pool-not-on-list";
-if (pool.includes("farm")) return "pool-farm";
-if (pool.includes("verus")) return "pool-verus";
-if (pool.includes("luckpool")) return "pool-luckpool";
-if (pool.includes("vipor")) return "pool-vipor";
-if (pool.includes("aihole")) return "pool-aihole";
-if (pool.includes("zeus")) return "pool-zeus";
-if (pool.includes("zerg")) return "pool-zerg";
-if (pool.includes("dmz")) return "pool-dmz";
-if (pool.includes("paddy")) return "pool-paddy";
-if (pool.includes("cedric")) return "pool-cedric";
-if (pool.includes("cisco")) return "pool-cisco";
-if (pool.includes("watt")) return "pool-watt";
-if (pool.includes("fast")) return "pool-fast";
-if (pool.includes("rg3d")) return "pool-rg3d";
-return "";
-}
-loadData();
-setInterval(loadData, 60 * 1000);
-</script>
-</body>
-</html>
+</div>`;allPoolsContainer.innerHTML = tableHTML;}createAllPoolsTable(allPools);function createSummTable(summData) {let summContainer = document.getElementById("summ-container");summContainer.innerHTML = "";if (!summData || summData.length === 0) return;let summ = summData[0];let tableHTML = `<div class="summ-table"><table><tr><th>Total</th><td>${summ.all_dev}</td></tr><tr><th>Active</th><td>${summ.dev_active}</td></tr><tr><th>Inactive</th><td>${summ.dev_inactive}</td></tr><tr><th>Offline</th><td>${summ.dev_off}</td></tr></table></div><div class="summ-table"><table><tr><th>MH/s</th><td>${summ.mhs_all}</td></tr><tr><th>VRSC/day</th><td>${summ.vrsc_day}</td></tr><tr><th>USDT/day</th><td>${summ.usdt_day}</td></tr><tr><th>Time</th><td>${summ.summ_time}</td></tr><tr><th>Iteration</th><td>${summ.iteration}</td></tr></table></div>`;summContainer.innerHTML = tableHTML;}function createSortTable(sortData) {let sortContainer = document.getElementById("sort-container");sortContainer.innerHTML = "";if (!sortData || sortData.length === 0) return;sortData.forEach(group => {let category = Object.keys(group)[0];let devices = group[category]["devices"].join("  ");let nrDevs = group[category]["nr-devs"];let poolColorClass = getPoolColorClass(category);console.log(`Category: ${category}, Class: ${poolColorClass}`);let tableHTML = `<div class="sort-container"><table class="sort-table"><tr><th class="sort-header ${poolColorClass}">${category} (${nrDevs})</th></tr><tr><td class="sort-data">${devices}</td></tr></table></div>`;sortContainer.innerHTML += tableHTML;});}function getPoolColorClass(pool) {if (!pool) return "";pool = pool.toLowerCase().trim();if (pool.includes("off-line")) return "pool-off-line";if (pool.includes("not-on-list")) return "pool-not-on-list";if (pool.includes("farm")) return "pool-farm";if (pool.includes("verus")) return "pool-verus";if (pool.includes("luckpool")) return "pool-luckpool";if (pool.includes("vipor")) return "pool-vipor";if (pool.includes("aihole")) return "pool-aihole";if (pool.includes("zeus")) return "pool-zeus";if (pool.includes("zerg")) return "pool-zerg";if (pool.includes("dmz")) return "pool-dmz";if (pool.includes("paddy")) return "pool-paddy";if (pool.includes("cedric")) return "pool-cedric";if (pool.includes("cisco")) return "pool-cisco";if (pool.includes("watt")) return "pool-watt";if (pool.includes("fast")) return "pool-fast";if (pool.includes("rg3d")) return "pool-rg3d";return "";}loadData();setInterval(loadData, 60 * 1000);</script></body></html>
