@@ -1,77 +1,91 @@
 {
   "DATE": [
-    "00:37:13 17.04.2025"
+    "10:37:04 18.04.2025"
   ],
   "DATA": [
     {
-      "PHONE": "Miner9a",
-      "HOST": "100.110",
+      "PHONE": "A50a",
+      "HOST": "102.101",
       "POOL": "farm",
-      "MHS": "3.728"
+      "MHS": "4.103"
     },
     {
-      "PHONE": "Miner8c",
-      "HOST": "100.172",
+      "PHONE": "A50b",
+      "HOST": "102.102",
       "POOL": "farm",
-      "MHS": "4.382"
+      "MHS": "4.234"
     },
     {
-      "PHONE": "A30a",
-      "HOST": "102.001",
-      "POOL": "OFF-LINE",
-      "MHS": "0.000"
-    },
-    {
-      "PHONE": "A30g",
-      "HOST": "102.007",
+      "PHONE": "A50c",
+      "HOST": "102.103",
       "POOL": "farm",
-      "MHS": "4.043"
+      "MHS": "4.174"
     },
     {
-      "PHONE": "A41a",
-      "HOST": "102.051",
-      "POOL": "OFF-LINE",
-      "MHS": "0.000"
+      "PHONE": "A50d",
+      "HOST": "102.104",
+      "POOL": "farm",
+      "MHS": "4.047"
     },
     {
-      "PHONE": "A41b",
-      "HOST": "102.052",
+      "PHONE": "A50e",
+      "HOST": "102.105",
+      "POOL": "farm",
+      "MHS": "4.228"
+    },
+    {
+      "PHONE": "A50f",
+      "HOST": "102.106",
+      "POOL": "farm",
+      "MHS": "4.036"
+    },
+    {
+      "PHONE": "A50g",
+      "HOST": "102.107",
+      "POOL": "farm",
+      "MHS": "3.934"
+    },
+    {
+      "PHONE": "HNRb",
+      "HOST": "100.241",
       "POOL": "OFF-LINE",
       "MHS": "0.000"
     }
   ],
   "SUMM": [
     {
-      "all_dev": 6,
-      "mhs_all": 12.153,
-      "dev_active": 3,
-      "dev_inactive": 3,
-      "dev_off": 2,
-      "vrsc_day": 0.02,
-      "usdt_day": 0.05,
-      "summ_time": "00:37:13",
-      "iteration": 23
+      "all_dev": 8,
+      "mhs_all": 28.756,
+      "dev_active": 7,
+      "dev_inactive": 1,
+      "dev_off": 3,
+      "vrsc_day": 0.05,
+      "usdt_day": 0.12,
+      "summ_time": "10:37:04",
+      "iteration": 9
     }
   ],
   "SORT": [
     {
       "farm": {
         "devices": [
-          "Miner9a",
-          "Miner8c",
-          "A30g"
+          "A50a",
+          "A50b",
+          "A50c",
+          "A50d",
+          "A50e",
+          "A50f",
+          "A50g"
         ],
-        "nr-devs": "3"
+        "nr-devs": "7"
       }
     },
     {
       "OFF-LINE": {
         "devices": [
-          "A30a",
-          "A41a",
-          "A41b"
+          "HNRb"
         ],
-        "nr-devs": "3"
+        "nr-devs": "1"
       }
     }
   ]
